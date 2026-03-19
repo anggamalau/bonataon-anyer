@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bona Taon Malau/Boru/Bere/Ibebere Pulaubore Legok — Anyer 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Nunito:wght@300;400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ocean: #0C6478;
+            --ocean-deep: #084B5A;
+            --ocean-light: #1A8FA3;
+            --sky: #7EC8D9;
+            --sky-pale: #D0EEF4;
+            --sand: #F5EDDA;
+            --sand-dark: #E8DCBF;
+            --coral: #E8734A;
+            --coral-soft: #F2A07B;
+            --sunset: #F4C068;
+            --sunset-deep: #E5983E;
+            --palm: #3D7A4A;
+            --palm-light: #5A9E5F;
+            --driftwood: #6B5B4A;
+            --driftwood-light: #9A8B78;
+            --night: #1B2D3A;
+            --white: #FEFCF7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Nunito', sans-serif; background: var(--sand); color: var(--night); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh; min-height: 100svh;
+            background: linear-gradient(175deg, #062C35 0%, #0A4554 20%, #0C6478 45%, #2A8494 62%, #D4944A 85%, #C96B3C 100%);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            position: relative; text-align: center; padding: 2rem 1.5rem; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; bottom: 15%; left: 50%; transform: translateX(-50%);
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(244,192,104,0.5) 0%, rgba(244,192,104,0.15) 40%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.6) 50%, transparent 100%),
+                radial-gradient(1px 1px at 30% 8%, rgba(255,255,255,0.4) 50%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 55% 12%, rgba(255,255,255,0.5) 50%, transparent 100%),
+                radial-gradient(1px 1px at 75% 20%, rgba(255,255,255,0.3) 50%, transparent 100%),
+                radial-gradient(1px 1px at 90% 6%, rgba(255,255,255,0.4) 50%, transparent 100%);
+            pointer-events: none;
+        }
+        .wave { position: absolute; bottom: 0; left: 0; width: 200%; height: 120px; }
+        .wave-1 { animation: wd 8s ease-in-out infinite; opacity: 0.25; }
+        .wave-2 { animation: wd 6s ease-in-out infinite reverse; opacity: 0.15; bottom: -10px; }
+        .wave-3 { animation: wd 10s ease-in-out infinite; opacity: 0.35; bottom: -5px; }
+        @keyframes wd { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-25%)} }
+
+        .hero-palm { width: 90px; height: 90px; margin-bottom: 1.5rem; animation: ps 4s ease-in-out infinite; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15)); }
+        @keyframes ps { 0%,100%{transform:rotate(-2deg)} 50%{transform:rotate(2deg)} }
+        .hero-palm svg { width: 100%; height: 100%; }
+
+        .hero-subtitle { font-family: 'Satisfy', cursive; font-size: 1.1rem; color: #FFD88A; margin-bottom: 0.75rem; animation: fu 1s ease-out 0.2s both; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .hero-title { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(2rem, 6vw, 3.8rem); color: #FFFFFF; line-height: 1.1; margin-bottom: 0.3rem; animation: fu 1s ease-out 0.4s both; text-shadow: 0 3px 20px rgba(0,0,0,0.35); }
+        .hero-title em { font-style: italic; font-weight: 400; color: #FFD88A; }
+        .hero-location { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.1rem, 3vw, 1.6rem); color: #FFFFFF; margin-bottom: 0.5rem; animation: fu 1s ease-out 0.55s both; text-shadow: 0 2px 10px rgba(0,0,0,0.25); }
+
+        .hero-tiktok { animation: fu 1s ease-out 0.65s both; margin-bottom: 1.8rem; }
+        .hero-tiktok a { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1.2rem; background: rgba(255,255,255,0.15); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.3); border-radius: 30px; color: #FFFFFF; text-decoration: none; font-size: 0.8rem; font-weight: 600; transition: all 0.3s; }
+        .hero-tiktok a:hover { background: rgba(255,255,255,0.22); color: var(--white); transform: translateY(-1px); }
+        .hero-tiktok svg { width: 16px; height: 16px; }
+
+        .hero-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; animation: fu 1s ease-out 0.8s both; }
+        .hero-meta-item { background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2); border-radius: 14px; padding: 0.7rem 1.2rem; display: flex; flex-direction: column; align-items: center; gap: 0.15rem; min-width: 100px; }
+        .hero-meta-label { font-size: 0.6rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.7); font-weight: 700; }
+        .hero-meta-value { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--white); font-weight: 700; }
+
+        .scroll-hint { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); animation: bo 2.5s ease-in-out infinite; color: rgba(255,255,255,0.7); z-index: 2; }
+        .scroll-hint svg { width: 22px; height: 22px; }
+
+        /* NAV */
+        .nav { position: sticky; top: 0; z-index: 100; background: rgba(12,100,120,0.92); backdrop-filter: blur(14px); border-bottom: 2px solid rgba(244,192,104,0.25); }
+        .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; overflow-x: auto; scrollbar-width: none; }
+        .nav-inner::-webkit-scrollbar { display: none; }
+        .nav a { padding: 0.9rem 1.1rem; font-size: 0.72rem; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.6); text-decoration: none; white-space: nowrap; transition: color 0.3s; font-weight: 700; }
+        .nav a:hover, .nav a.active { color: var(--sunset); }
+
+        /* SECTIONS */
+        section { max-width: 1100px; margin: 0 auto; padding: 3.5rem 1.25rem; }
+        .section-label { font-family: 'Satisfy', cursive; font-size: 1rem; color: var(--coral); margin-bottom: 0.3rem; }
+        .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 700; color: var(--ocean-deep); margin-bottom: 0.4rem; line-height: 1.15; }
+        .section-title em { font-style: italic; font-weight: 400; color: var(--ocean-light); }
+        .section-desc { font-size: 0.95rem; color: var(--driftwood-light); max-width: 560px; line-height: 1.7; margin-bottom: 2rem; }
+        .section-divider { width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--sky-pale), var(--sand-dark), transparent); }
+
+        /* PAYMENT */
+        .payment-banner { background: linear-gradient(135deg, var(--ocean-deep), var(--ocean), var(--ocean-light)); border-radius: 20px; padding: 2rem 1.5rem; color: var(--white); position: relative; overflow: hidden; box-shadow: 0 12px 40px rgba(12,100,120,0.25); }
+        .payment-banner::before { content: ''; position: absolute; top: -30%; right: -15%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(244,192,104,0.2), transparent 70%); pointer-events: none; }
+        .payment-label { font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 700; }
+        .payment-amount { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 700; color: var(--sunset); margin: 0.3rem 0; }
+        .payment-bank { margin-top: 1.2rem; padding: 1rem 1.2rem; background: rgba(255,255,255,0.1); border-radius: 14px; border: 1px solid rgba(255,255,255,0.15); }
+        .payment-bank-label { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; color: var(--sky); margin-bottom: 0.4rem; font-weight: 700; }
+        .payment-bank-number { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 700; letter-spacing: 2px; }
+        .payment-bank-name { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-top: 0.2rem; }
+        .payment-deadline { margin-top: 1rem; padding: 0.7rem 1rem; background: rgba(232,115,74,0.2); border-radius: 10px; border: 1px solid rgba(232,115,74,0.35); font-size: 0.82rem; color: var(--coral-soft); font-weight: 700; }
+
+        /* SUMMARY */
+        .summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
+        .summary-card { background: var(--white); border-radius: 16px; padding: 1.25rem; border: 1px solid var(--sand-dark); transition: transform 0.3s, box-shadow 0.3s; }
+        .summary-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(12,100,120,0.1); }
+        .summary-card-label { font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--driftwood-light); margin-bottom: 0.4rem; font-weight: 700; }
+        .summary-card-value { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 700; color: var(--ocean-deep); }
+        .summary-card-value.green { color: var(--palm); }
+        .summary-card-value.gold { color: var(--sunset-deep); }
+
+        /* TIMELINE */
+        .timeline-day { margin-bottom: 2rem; }
+        .timeline-day-header { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 700; color: var(--ocean-deep); margin-bottom: 0.75rem; padding-bottom: 0.6rem; border-bottom: 2px solid var(--sky-pale); display: flex; align-items: center; gap: 0.6rem; }
+        .timeline-day-badge { background: var(--ocean); color: var(--sunset); font-family: 'Nunito', sans-serif; font-size: 0.6rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 20px; }
+        .timeline-item { display: grid; grid-template-columns: 58px 1fr; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid rgba(0,0,0,0.04); align-items: start; }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-time { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 0.95rem; color: var(--coral); }
+        .timeline-content h4 { font-size: 0.88rem; font-weight: 700; color: var(--night); margin-bottom: 0.1rem; }
+        .timeline-pic { font-size: 0.78rem; color: var(--driftwood-light); font-style: italic; }
+
+        /* TABLES */
+        .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0; border-radius: 16px; border: 1px solid var(--sand-dark); background: var(--white); box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        thead th { background: var(--ocean-deep); color: var(--sky); font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; padding: 0.85rem 1rem; text-align: left; font-weight: 700; white-space: nowrap; }
+        tbody td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(0,0,0,0.04); }
+        tbody tr:hover { background: rgba(126,200,217,0.06); }
+        tbody tr:last-child td { border-bottom: none; }
+        .category-row td { background: rgba(12,100,120,0.04); font-weight: 800; color: var(--ocean); font-size: 0.8rem; }
+        .total-row td { background: var(--ocean-deep); color: var(--sunset); font-weight: 700; font-family: 'Cormorant Garamond', serif; font-size: 1rem; }
+
+        .badge { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 20px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.5px; }
+        .badge-donasi { background: rgba(61,122,74,0.1); color: var(--palm); }
+        .badge-lunas { background: rgba(61,122,74,0.1); color: var(--palm); }
+        .badge-belum { background: rgba(232,115,74,0.1); color: var(--coral); }
+        .badge-sebagian { background: rgba(244,192,104,0.2); color: var(--sunset-deep); }
+
+        /* SUB-HEADINGS */
+        .sub-heading { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+        .sub-heading .icon { width: 30px; height: 30px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
+
+        /* GRIDS */
+        .peserta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.6rem; }
+        .peserta-card { background: var(--white); border: 1px solid var(--sand-dark); border-radius: 14px; padding: 0.85rem 1rem; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.3s, box-shadow 0.3s; }
+        .peserta-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(12,100,120,0.08); }
+        .peserta-number { width: 34px; height: 34px; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+        .peserta-info h4 { font-size: 0.82rem; font-weight: 700; color: var(--night); line-height: 1.3; }
+        .peserta-info span { font-size: 0.75rem; color: var(--driftwood-light); }
+
+        .transport-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
+        .transport-card { background: var(--white); border: 1px solid var(--sand-dark); border-radius: 14px; padding: 1rem 1.2rem; transition: transform 0.3s; }
+        .transport-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(12,100,120,0.06); }
+        .transport-car { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+        .transport-car-icon { font-size: 1.1rem; }
+        .transport-car h4 { font-size: 0.82rem; font-weight: 800; color: var(--ocean); }
+        .transport-passengers { font-size: 0.78rem; color: var(--driftwood-light); line-height: 1.6; padding-left: 1.8rem; }
+
+        .donasi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.6rem; }
+        .donasi-card { background: var(--white); border: 1px solid rgba(61,122,74,0.15); border-radius: 14px; padding: 1rem 1.1rem; border-left: 3px solid var(--palm-light); }
+        .donasi-card h4 { font-size: 0.85rem; font-weight: 700; color: var(--night); margin-bottom: 0.2rem; }
+        .donasi-card span { font-size: 0.75rem; color: var(--palm); font-weight: 600; }
+
+        /* FOOTER */
+        .footer { background: linear-gradient(170deg, var(--ocean-deep), var(--night)); color: rgba(255,255,255,0.5); text-align: center; padding: 3rem 1.5rem; position: relative; overflow: hidden; }
+        .footer::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--ocean-light), var(--sunset), var(--coral), var(--sunset), var(--ocean-light)); }
+        .footer-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 700; color: var(--sunset); margin-bottom: 0.4rem; }
+        .footer-text { font-size: 0.82rem; line-height: 1.7; max-width: 500px; margin: 0 auto; }
+        .footer-horas { font-family: 'Satisfy', cursive; font-size: 2.2rem; color: var(--sunset); margin-top: 1.2rem; }
+
+        /* ANIMATIONS */
+        @keyframes fu { from{opacity:0;transform:translateY(25px)} to{opacity:1;transform:translateY(0)} }
+        @keyframes bo { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* RESPONSIVE */
+        @media (max-width: 640px) {
+            section { padding: 2.5rem 1rem; }
+            .hero { padding: 1.5rem 1rem; }
+            .hero-palm { width: 70px; height: 70px; }
+            .hero-title { font-size: 1.6rem; }
+            .hero-location { font-size: 1rem; }
+            .hero-meta { gap: 0.5rem; }
+            .hero-meta-item { min-width: 70px; padding: 0.5rem 0.7rem; border-radius: 10px; }
+            .hero-meta-label { font-size: 0.5rem; letter-spacing: 1px; }
+            .hero-meta-value { font-size: 0.82rem; }
+            .nav a { padding: 0.75rem 0.8rem; font-size: 0.62rem; letter-spacing: 1px; }
+            .section-title { font-size: 1.6rem; }
+            .section-desc { font-size: 0.88rem; margin-bottom: 1.5rem; }
+            .payment-banner { padding: 1.5rem 1.2rem; border-radius: 16px; }
+            .payment-amount { font-size: 1.8rem; }
+            .payment-bank-number { font-size: 1.15rem; }
+            .summary-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+            .summary-card { padding: 1rem; display: flex; align-items: center; justify-content: space-between; }
+            .summary-card-label { margin-bottom: 0; }
+            .summary-card-value { font-size: 1.15rem; }
+            .timeline-item { grid-template-columns: 50px 1fr; gap: 0.5rem; padding: 0.6rem 0; }
+            .timeline-time { font-size: 0.85rem; }
+            .timeline-content h4 { font-size: 0.82rem; }
+            table { font-size: 0.78rem; }
+            thead th { padding: 0.7rem 0.75rem; font-size: 0.58rem; }
+            tbody td { padding: 0.6rem 0.75rem; }
+            .peserta-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+            .peserta-card { padding: 0.75rem 0.85rem; }
+            .transport-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+            .donasi-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+            .sub-heading { font-size: 1.05rem; }
+            .footer-title { font-size: 1.2rem; }
+            .footer-horas { font-size: 1.8rem; }
+        }
+        @media (min-width:641px) and (max-width:900px) {
+            .summary-grid { grid-template-columns: repeat(3,1fr); }
+            .peserta-grid { grid-template-columns: repeat(2,1fr); }
+            .transport-grid { grid-template-columns: repeat(2,1fr); }
+            .donasi-grid { grid-template-columns: repeat(2,1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-palm">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 95 C50 95,48 60,52 40 C53 35,51 32,50 30" stroke="#8B6C40" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M50 95 C50 95,49 60,53 40" stroke="#A07D4E" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+            <circle cx="48" cy="32" r="3" fill="#7A5C2E"/><circle cx="54" cy="30" r="2.5" fill="#8B6C40"/><circle cx="51" cy="28" r="2.5" fill="#6B4D25"/>
+            <path d="M50 28 C40 20,15 22,5 30" stroke="#3D7A4A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C38 18,20 12,8 18" stroke="#4A9050" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C42 15,28 5,15 8" stroke="#5A9E5F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C60 20,85 22,95 30" stroke="#3D7A4A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C62 18,80 12,92 18" stroke="#4A9050" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C58 15,72 5,85 8" stroke="#5A9E5F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C50 15,48 5,50 0" stroke="#3D7A4A" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C45 14,38 4,35 0" stroke="#4A9050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M50 28 C55 14,62 4,65 0" stroke="#4A9050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <p class="hero-subtitle">Acara Keluarga Besar</p>
+    <h1 class="hero-title">Bona Taon<br>Malau/Boru/Bere/Ibebere Pulaubore<br><em>Legok dan Sekitarnya</em></h1>
+    <p class="hero-location">Pondok Lucia, Pantai Anyer</p>
+    <div class="hero-tiktok">
+        <a href="https://vt.tiktok.com/ZSNKg8ptE" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.44 6.3 6.3 0 001.86-4.48V8.76a8.26 8.26 0 004.84 1.56v-3.5a4.84 4.84 0 01-1.12-.13z"/></svg>
+            Lihat Lokasi di TikTok
+        </a>
+    </div>
+    <div class="hero-meta">
+        <div class="hero-meta-item"><span class="hero-meta-label">Tanggal</span><span class="hero-meta-value">18–19 Apr 2026</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Durasi</span><span class="hero-meta-value">2H 1M</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Peserta</span><span class="hero-meta-value">70+ Org</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Keluarga</span><span class="hero-meta-value">19 Kel.</span></div>
+    </div>
+    <svg class="wave wave-1" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120Z" fill="#F5EDDA"/></svg>
+    <svg class="wave wave-2" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,80 C240,20 480,100 720,60 C960,20 1200,90 1440,50 L1440,120 L0,120Z" fill="#F5EDDA"/></svg>
+    <svg class="wave wave-3" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,40 C320,100 640,20 960,70 C1120,90 1300,50 1440,80 L1440,120 L0,120Z" fill="#F5EDDA"/></svg>
+    <div class="scroll-hint"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></div>
+</header>
+
+<nav class="nav"><div class="nav-inner">
+    <a href="#iuran">Iuran</a>
+    <a href="#jadwal">Jadwal</a>
+    <a href="#pengeluaran">Pengeluaran</a>
+    <a href="#pemasukan">Pemasukan & Donasi</a>
+    <a href="#peserta">Peserta</a>
+    <a href="#transport">Transportasi</a>
+</div></nav>
+
+<!-- IURAN -->
+<section id="iuran">
+    <div class="fade-in"><p class="section-label">Toktok Ripe</p><h2 class="section-title">Iuran <em>Keluarga</em></h2><p class="section-desc">Iuran per keluarga untuk menanggung biaya acara bersama. Mauliate godang di hamu sude.</p></div>
+    <div class="fade-in payment-banner">
+        <p class="payment-label">Toktok Ripe per Keluarga</p>
+        <p class="payment-amount">Rp 430.000</p>
+        <div class="payment-bank"><p class="payment-bank-label">Info Pembayaran</p><p class="payment-bank-name" style="color:rgba(255,255,255,0.9); font-size:0.95rem">Detail rekening transfer akan diinfokan melalui grup WhatsApp keluarga.</p></div>
+        <div class="payment-deadline">⏰ Pelunasan Terakhir: 31 Maret 2026</div>
+    </div>
+    <div class="fade-in" style="margin-top:2rem">
+        <h3 class="sub-heading" style="color:var(--ocean)"><span class="icon" style="background:rgba(12,100,120,0.08)">📋</span> Status Pembayaran</h3>
+        <div class="table-wrapper"><table>
+            <thead><tr><th>No</th><th>Keluarga</th><th style="text-align:right">Jumlah</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Keluarga Vera</td><td style="text-align:right">—</td><td><span class="badge badge-belum">Belum</span></td></tr>
+                <tr><td>2</td><td>Keluarga Grace</td><td style="text-align:right">—</td><td><span class="badge badge-belum">Belum</span></td></tr>
+                <tr><td>3</td><td>Keluarga Vania</td><td style="text-align:right">Rp 430.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+                <tr><td>4</td><td>Keluarga Jasson</td><td style="text-align:right">Rp 430.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+                <tr><td>5</td><td>Keluarga Yove</td><td style="text-align:right">Rp 200.000</td><td><span class="badge badge-sebagian">Sebagian</span></td></tr>
+                <tr><td>6</td><td>Keluarga Elyn</td><td style="text-align:right">—</td><td><span class="badge badge-belum">Belum</span></td></tr>
+                <tr><td>7</td><td>Keluarga Okta</td><td style="text-align:right">Rp 430.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+                <tr><td>8</td><td>Keluarga Fernando</td><td style="text-align:right">Rp 100.000</td><td><span class="badge badge-sebagian">Sebagian</span></td></tr>
+                <tr><td>9</td><td>Keluarga Amel</td><td style="text-align:right">—</td><td><span class="badge badge-belum">Belum</span></td></tr>
+                <tr><td>10</td><td>Keluarga Reinhard</td><td style="text-align:right">—</td><td><span class="badge badge-belum">Belum</span></td></tr>
+                <tr><td>11</td><td>Keluarga Op. Mentari</td><td style="text-align:right">Rp 430.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+                <tr><td>12</td><td>Keluarga Marcel</td><td style="text-align:right">—</td><td><span class="badge badge-belum">Belum</span></td></tr>
+                <tr><td>13</td><td>Keluarga Op. Leonel</td><td style="text-align:right">—</td><td><span class="badge badge-belum">Belum</span></td></tr>
+                <tr><td>14</td><td>Keluarga Etta</td><td style="text-align:right">Rp 430.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+                <tr><td>15</td><td>Keluarga Paulina</td><td style="text-align:right">Rp 430.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+                <tr><td>16</td><td>Keluarga Mosa</td><td style="text-align:right">Rp 430.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+                <tr><td>17</td><td>Keluarga Callista</td><td style="text-align:right">Rp 100.000</td><td><span class="badge badge-sebagian">Sebagian</span></td></tr>
+                <tr><td>18</td><td>Keluarga Mentari</td><td style="text-align:right">Rp 450.000</td><td><span class="badge badge-lunas">Lunas</span></td></tr>
+            </tbody>
+        </table></div>
+    </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- JADWAL -->
+<section id="jadwal">
+    <div class="fade-in"><p class="section-label">Ringkasan Acara</p><h2 class="section-title">Jadwal <em>Kegiatan</em></h2><p class="section-desc">Rangkaian acara selama 2 hari 1 malam di Pondok Lucia, Pantai Anyer.</p></div>
+    <div class="fade-in timeline-day">
+        <div class="timeline-day-header"><span class="timeline-day-badge">Hari 1</span> Sabtu, 18 April 2026</div>
+        <div class="timeline-item"><span class="timeline-time">05:30</span><div class="timeline-content"><h4>Berkumpul di TiKum (Rumah Keluarga Vania)</h4></div></div>
+        <div class="timeline-item"><span class="timeline-time">07:00</span><div class="timeline-content"><h4>Berangkat bersama dari TiKum</h4></div></div>
+        <div class="timeline-item"><span class="timeline-time">12:00</span><div class="timeline-content"><h4>Sampai di lokasi — Pondok Lucia Anyer</h4></div></div>
+        <div class="timeline-item"><span class="timeline-time">13:00</span><div class="timeline-content"><h4>Makan siang</h4><p class="timeline-pic">Disiapkan masing-masing keluarga</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">14:00</span><div class="timeline-content"><h4>Acara games anak-anak</h4><p class="timeline-pic">PIC: Am. Jasson</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">16:00</span><div class="timeline-content"><h4>Acara bebas dan istirahat</h4></div></div>
+        <div class="timeline-item"><span class="timeline-time">18:00</span><div class="timeline-content"><h4>Makan malam bersama di Pondok Lucia</h4><p class="timeline-pic">PIC: In. Op. Mentari &amp; In. Yove</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">19:00</span><div class="timeline-content"><h4>Acara resmi Bona Taon &amp; acara bebas</h4><p class="timeline-pic">PIC: Am. Mosa &amp; Am. Etta</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">23:00</span><div class="timeline-content"><h4>Tidur / Istirahat malam</h4></div></div>
+    </div>
+    <div class="fade-in timeline-day">
+        <div class="timeline-day-header"><span class="timeline-day-badge">Hari 2</span> Minggu, 19 April 2026</div>
+        <div class="timeline-item"><span class="timeline-time">07:00</span><div class="timeline-content"><h4>Sarapan bersama</h4><p class="timeline-pic">PIC: In. Op. Mentari &amp; In. Yove</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">08:00</span><div class="timeline-content"><h4>Acara bebas</h4></div></div>
+        <div class="timeline-item"><span class="timeline-time">10:00</span><div class="timeline-content"><h4>Ibadah pagi</h4><p class="timeline-pic">PIC: In. Etta</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">11:00</span><div class="timeline-content"><h4>Persiapan pulang</h4></div></div>
+        <div class="timeline-item"><span class="timeline-time">12:00</span><div class="timeline-content"><h4>Makan siang bersama di Pondok Lucia</h4><p class="timeline-pic">PIC: In. Op. Mentari &amp; In. Yove</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">13:00</span><div class="timeline-content"><h4>Perjalanan pulang</h4></div></div>
+    </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- PENGELUARAN -->
+<section id="pengeluaran">
+    <div class="fade-in"><p class="section-label">Transparansi Keuangan</p><h2 class="section-title">Rincian <em>Pengeluaran</em></h2><p class="section-desc">Detail seluruh biaya pengeluaran acara, termasuk rincian konsumsi.</p></div>
+    <div class="fade-in summary-grid">
+        <div class="summary-card"><p class="summary-card-label">Pengeluaran</p><p class="summary-card-value">Rp 13.090.000</p></div>
+        <div class="summary-card"><p class="summary-card-label">Pemasukan</p><p class="summary-card-value green">Rp 5.800.000</p></div>
+        <div class="summary-card"><p class="summary-card-label">Sisa</p><p class="summary-card-value gold">Rp 7.290.000</p></div>
+    </div>
+    <div class="fade-in">
+        <h3 class="sub-heading" style="color:var(--ocean)"><span class="icon" style="background:rgba(12,100,120,0.08)">💰</span> Pengeluaran Utama</h3>
+        <div class="table-wrapper"><table>
+            <thead><tr><th>No</th><th>Item</th><th>Qty</th><th style="text-align:right">Harga (Rp)</th></tr></thead>
+            <tbody>
+                <tr class="category-row"><td></td><td colspan="3">Penginapan</td></tr>
+                <tr><td>1</td><td>Sewa Villa</td><td>1</td><td style="text-align:right">6.500.000</td></tr>
+                <tr class="category-row"><td></td><td colspan="3">Transportasi</td></tr>
+                <tr><td>2</td><td>Mobil Pribadi + Biaya Transport (@150rb/Kel, maksimal @300rb/Mobil)</td><td>9</td><td style="text-align:right">2.400.000</td></tr>
+                <tr><td>3</td><td>Rental Mobil Pickup + Biaya Transport (@800rb)</td><td>1</td><td style="text-align:right">800.000</td></tr>
+                <tr class="category-row"><td></td><td colspan="3">Konsumsi</td></tr>
+                <tr><td>4</td><td>Sabtu: Sarapan</td><td>—</td><td style="text-align:right;color:var(--driftwood-light);font-style:italic">Masing-masing</td></tr>
+                <tr><td>5</td><td>Sabtu: Makan Siang</td><td>—</td><td style="text-align:right;color:var(--driftwood-light);font-style:italic">Masing-masing</td></tr>
+                <tr><td>6</td><td>Sabtu: Makan Malam</td><td>1</td><td style="text-align:right">3.030.000</td></tr>
+                <tr><td>7</td><td>Minggu: Sarapan</td><td>1</td><td style="text-align:right">—</td></tr>
+                <tr><td>8</td><td>Minggu: Makan Siang</td><td>1</td><td style="text-align:right">—</td></tr>
+                <tr class="category-row"><td></td><td colspan="3">Hiburan</td></tr>
+                <tr><td>9</td><td>Souvenir Anak-anak (@15rb)</td><td>24</td><td style="text-align:right">360.000</td></tr>
+                <tr class="total-row"><td></td><td colspan="2">TOTAL PENGELUARAN</td><td style="text-align:right">Rp 13.090.000</td></tr>
+            </tbody>
+        </table></div>
+    </div>
+    <div class="fade-in" style="margin-top:2rem">
+        <h3 class="sub-heading" style="color:var(--ocean)"><span class="icon" style="background:rgba(12,100,120,0.08)">🍽️</span> Detail Biaya Konsumsi</h3>
+        <div class="table-wrapper"><table>
+            <thead><tr><th>No</th><th>Item</th><th>Qty</th><th style="text-align:right">Harga</th><th>Catatan</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Beras @15rb/kg</td><td>20 kg</td><td style="text-align:right"><span class="badge badge-donasi">Donasi</span></td><td>Keluarga Okta</td></tr>
+                <tr><td>2</td><td>Air Mineral @24rb/dus</td><td>10 dus</td><td style="text-align:right"><span class="badge badge-donasi">Donasi</span></td><td>Keluarga Yove</td></tr>
+                <tr><td>3</td><td>Telur @30rb/kg</td><td>5 kg</td><td style="text-align:right"><span class="badge badge-donasi">Donasi</span></td><td>Keluarga Grace</td></tr>
+                <tr><td>4</td><td>Daging Babi @80rb/kg</td><td>6 kg</td><td style="text-align:right">480.000</td><td></td></tr>
+                <tr><td>5</td><td>Sop Babi @70rb/kg</td><td>3 kg</td><td style="text-align:right">210.000</td><td></td></tr>
+                <tr><td>6</td><td>Ayam Kampung @100rb/ekor</td><td>6 ekor</td><td style="text-align:right">600.000</td><td></td></tr>
+                <tr><td>7</td><td>Ayam Potong @45rb/kg</td><td>5 kg</td><td style="text-align:right">225.000</td><td></td></tr>
+                <tr><td>8</td><td>Ikan Asin Teri Medan @140rb/kg</td><td>1 kg</td><td style="text-align:right">140.000</td><td></td></tr>
+                <tr><td>9</td><td>Indomie @140rb/Dus</td><td>2 dus</td><td style="text-align:right">280.000</td><td></td></tr>
+                <tr><td>10</td><td>Semangka @15rb/kg</td><td>10 kg</td><td style="text-align:right"><span class="badge badge-donasi">Donasi</span></td><td>Keluarga Samuel</td></tr>
+                <tr><td>11</td><td>Gelas Plastik @15rb/ktg</td><td>5 ktg</td><td style="text-align:right">75.000</td><td></td></tr>
+                <tr><td>12</td><td>Wortel</td><td>—</td><td style="text-align:right">60.000</td><td></td></tr>
+                <tr><td>13</td><td>Timun & Sawi Pahit</td><td>—</td><td style="text-align:right">100.000</td><td></td></tr>
+                <tr><td>14</td><td>Kopi, Teh, Gula</td><td>—</td><td style="text-align:right"><span class="badge badge-donasi">Donasi</span></td><td>Keluarga Paulina</td></tr>
+                <tr><td>15</td><td>Lapet @3rb/bungkus</td><td>100</td><td style="text-align:right">300.000</td><td></td></tr>
+                <tr><td>16</td><td>Cemilan Rebusan</td><td>—</td><td style="text-align:right">200.000</td><td></td></tr>
+                <tr><td>17</td><td>Kertas Nasi</td><td>—</td><td style="text-align:right">60.000</td><td></td></tr>
+                <tr><td>18</td><td>Bumbu-bumbu</td><td>—</td><td style="text-align:right">300.000</td><td></td></tr>
+                <tr class="total-row"><td></td><td colspan="2">TOTAL KONSUMSI</td><td style="text-align:right">Rp 3.030.000</td><td></td></tr>
+            </tbody>
+        </table></div>
+    </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- PEMASUKAN & DONASI -->
+<section id="pemasukan">
+    <div class="fade-in"><p class="section-label">Dukungan Keluarga</p><h2 class="section-title">Pemasukan <em>&amp; Donasi</em></h2><p class="section-desc">Seluruh pemasukan berupa donasi uang dan donasi barang. Bagi amang/inang yang ingin memberikan donasi lagi, bisa diinfokan ke panitia. Mauliate.</p></div>
+    <div class="fade-in">
+        <h3 class="sub-heading" style="color:var(--palm)"><span class="icon" style="background:rgba(61,122,74,0.1)">💵</span> Donasi Uang</h3>
+        <div class="table-wrapper"><table>
+            <thead><tr><th>No</th><th>Donatur</th><th style="text-align:right">Jumlah (Rp)</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Donasi Keluarga Op Mentari</td><td style="text-align:right">500.000</td></tr>
+                <tr><td>2</td><td>Donasi Keluarga Grace</td><td style="text-align:right">300.000</td></tr>
+                <tr><td>3</td><td>Donasi Keluarga Etta</td><td style="text-align:right">2.000.000</td></tr>
+                <tr><td>4</td><td>Donasi Keluarga Mosa</td><td style="text-align:right">300.000</td></tr>
+                <tr><td>5</td><td>Donasi Keluarga Vania</td><td style="text-align:right">200.000</td></tr>
+                <tr><td>6</td><td>Donasi Keluarga Rihadson</td><td style="text-align:right">500.000</td></tr>
+                <tr><td>7</td><td>Donasi Keluarga yang Berarisan (Makan malam)</td><td style="text-align:right">1.000.000</td></tr>
+                <tr><td>8</td><td>Subsidi Kas Punguan</td><td style="text-align:right">1.000.000</td></tr>
+                <tr class="total-row"><td></td><td>TOTAL PEMASUKAN</td><td style="text-align:right">Rp 5.800.000</td></tr>
+            </tbody>
+        </table></div>
+    </div>
+    <div class="fade-in" style="margin-top:2rem">
+        <h3 class="sub-heading" style="color:var(--palm)"><span class="icon" style="background:rgba(61,122,74,0.1)">🎁</span> Donasi Barang</h3>
+        <div class="donasi-grid">
+            <div class="donasi-card"><h4>Spanduk & Stiker Rombongan</h4><span>Keluarga Etta</span></div>
+            <div class="donasi-card"><h4>1 Set Plastik Sampah</h4><span>Keluarga Etta</span></div>
+            <div class="donasi-card"><h4>Snack Kacang Bali</h4><span>Keluarga Mosa</span></div>
+            <div class="donasi-card"><h4>70 Piring Plastik</h4><span>Keluarga Op Mentari</span></div>
+        </div>
+    </div>
+    <div class="fade-in" style="margin-top:2rem">
+        <h3 class="sub-heading" style="color:var(--palm)"><span class="icon" style="background:rgba(61,122,74,0.1)">🥘</span> Donasi Bahan Konsumsi</h3>
+        <div class="donasi-grid">
+            <div class="donasi-card"><h4>Beras 20 kg</h4><span>Keluarga Okta</span></div>
+            <div class="donasi-card"><h4>Air Mineral 10 dus</h4><span>Keluarga Yove</span></div>
+            <div class="donasi-card"><h4>Telur 5 kg</h4><span>Keluarga Grace</span></div>
+            <div class="donasi-card"><h4>Semangka 10 kg</h4><span>Keluarga Samuel</span></div>
+            <div class="donasi-card"><h4>Kopi, Teh, Gula</h4><span>Keluarga Paulina</span></div>
+        </div>
+    </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- PESERTA -->
+<section id="peserta">
+    <div class="fade-in"><p class="section-label">Keluarga Besar</p><h2 class="section-title">Daftar <em>Peserta</em></h2><p class="section-desc">19 keluarga, 70+ orang bersama merayakan Bona Taon.</p></div>
+    <div class="fade-in peserta-grid">
+        <div class="peserta-card"><div class="peserta-number">1</div><div class="peserta-info"><h4>Keluarga Vera</h4><span>5 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">2</div><div class="peserta-info"><h4>Keluarga Grace</h4><span>5 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">3</div><div class="peserta-info"><h4>Keluarga Vania</h4><span>5 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">4</div><div class="peserta-info"><h4>Keluarga Jasson</h4><span>4 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">5</div><div class="peserta-info"><h4>Keluarga Yove</h4><span>5 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">6</div><div class="peserta-info"><h4>Keluarga Elyn</h4><span>2 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">7</div><div class="peserta-info"><h4>Keluarga Okta</h4><span>2 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">8</div><div class="peserta-info"><h4>Keluarga Fernando</h4><span>4 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">9</div><div class="peserta-info"><h4>Keluarga Amel</h4><span>5 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">10</div><div class="peserta-info"><h4>Keluarga Reinhard</h4><span>4 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">11</div><div class="peserta-info"><h4>Keluarga Op. Mentari</h4><span>3 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">12</div><div class="peserta-info"><h4>Keluarga Marcel</h4><span>2 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">13</div><div class="peserta-info"><h4>Keluarga Op. Leonel</h4><span>4 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">14</div><div class="peserta-info"><h4>Keluarga Etta</h4><span>4 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">15</div><div class="peserta-info"><h4>Keluarga Paulina</h4><span>3 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">16</div><div class="peserta-info"><h4>Keluarga Mosa</h4><span>5 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">17</div><div class="peserta-info"><h4>Keluarga Callista</h4><span>3 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">18</div><div class="peserta-info"><h4>Keluarga Mentari</h4><span>3 orang</span></div></div>
+        <div class="peserta-card"><div class="peserta-number">19</div><div class="peserta-info"><h4>Keluarga Samuel</h4><span>4 orang</span></div></div>
+    </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- TRANSPORTASI -->
+<section id="transport">
+    <div class="fade-in"><p class="section-label">Pembagian Kendaraan</p><h2 class="section-title">Rencana <em>Transportasi</em></h2><p class="section-desc">Pembagian rombongan ke 9 kendaraan untuk perjalanan ke Anyer.</p></div>
+    <div class="fade-in transport-grid">
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 1 — Keluarga Vera</h4></div><p class="transport-passengers">Kel. Vera (5 org)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 2 — Keluarga Op. Mentari</h4></div><p class="transport-passengers">Kel. Op. Mentari (3), Kel. Etta (4), Kel. Mentari (3)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 3 — Keluarga Okta</h4></div><p class="transport-passengers">Kel. Okta (2), Kel. Yove (5)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 4 — Keluarga Op. Leonel</h4></div><p class="transport-passengers">Kel. Op. Leonel (4), Kel. Reinhard (4)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 5 — Keluarga Mosa</h4></div><p class="transport-passengers">Kel. Mosa (5), Kel. Calista (1)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 6 — Keluarga Elyn</h4></div><p class="transport-passengers">Kel. Elyn (2), Kel. Amel (5)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 7 — Keluarga Jasson</h4></div><p class="transport-passengers">Kel. Jasson (4), Kel. Fernando (2), Kel. Calista (2)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 8 — Keluarga Vania</h4></div><p class="transport-passengers">Kel. Vania (5), Kel. Grace (5)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 9 — Keluarga Paulina</h4></div><p class="transport-passengers">Kel. Paulina (3), Kel. Samuel (4)</p></div>
+        <div class="transport-card"><div class="transport-car"><span class="transport-car-icon">🚗</span><h4>Mobil 10 — Pickup</h4></div><p class="transport-passengers">Transportasi Tambahan</p></div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p class="footer-title">Bona Taon Malau/Boru/Bere/Ibebere Pulaubore<br>Legok dan Sekitarnya</p>
+    <p class="footer-text">18–19 April 2026 · Pondok Lucia, Pantai Anyer<br>2 Hari 1 Malam · 70+ Peserta · 19 Keluarga</p>
+    <p class="footer-horas">Horas!</p>
+</footer>
+
+<script>
+    const obs=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+    document.querySelectorAll('.fade-in').forEach(e=>obs.observe(e));
+    const secs=document.querySelectorAll('section[id]'),navs=document.querySelectorAll('.nav a');
+    window.addEventListener('scroll',()=>{let c='';secs.forEach(s=>{if(scrollY>=s.offsetTop-100)c=s.id});navs.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+c))});
+    navs.forEach(l=>l.addEventListener('click',e=>{e.preventDefault();document.querySelector(l.getAttribute('href'))?.scrollIntoView({behavior:'smooth',block:'start'})}));
+</script>
+</body>
+</html>
